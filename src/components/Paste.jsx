@@ -23,7 +23,9 @@ function Paste() {
     navigator.clipboard
       .writeText(paste.content)
       .then(() => {
-        toast.success("Content copied to clipboard!");
+        toast.success("Content copied to clipboard!", {
+          position: "top-right",
+        });
       })
       .catch((err) => {
         console.error("Failed to copy: ", err);
