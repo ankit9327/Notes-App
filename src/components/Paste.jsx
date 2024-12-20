@@ -60,7 +60,7 @@ function Paste() {
         onChange={(e) => setSearchItem(e.target.value)}
       />
 
-      <div className="flex flex-col gap-5 mt-5 max-h-80 overflow-y-scroll scrollbar-thin">
+      <div className="flex flex-col gap-5 mt-5 max-h-80 overflow-y-scroll ">
         {filteredData.length > 0 &&
           filteredData.map((paste) => (
             <div className="border p-6 rounded">
